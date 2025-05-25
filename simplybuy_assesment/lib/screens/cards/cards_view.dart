@@ -51,9 +51,9 @@ class _CardsViewState extends State<CardsView> {
                   children: [
                     Row(
                       mainAxisSize: MainAxisSize.min,
-                      spacing: 10,
                       children: [
                         Text('Stroll Bonfire', style: bigTopicTextStyles),
+                        SizedBox(width: 10,),
                         Column(
                           children: [
                             SizedBox(height: 5),
@@ -153,14 +153,13 @@ class _CardsViewState extends State<CardsView> {
               ),
               SizedBox(height: 10),
               Column(
-                spacing: 10,
                 children: [
                   Text(
                     '“ Mine is definitely the peace in the morning.”',
                     style: myAnswerTextStyles,
                     textAlign: TextAlign.center,
                   ),
-
+                  SizedBox(height: 10,),
                   Center(
                     child: GridView.builder(
                       itemCount: answers.length,
@@ -201,7 +200,6 @@ class _CardsViewState extends State<CardsView> {
                                 horizontal: 8,
                               ),
                               child: Row(
-                                spacing: 12,
                                 children: [
                                   Container(
                                     padding: const EdgeInsets.all(6),
@@ -218,6 +216,7 @@ class _CardsViewState extends State<CardsView> {
                                       style: answerOptionTextStyles,
                                     ),
                                   ),
+                                  SizedBox(width: 12,),
                                   Flexible(
                                     child: Text(
                                       answers[index],
@@ -251,7 +250,6 @@ class _CardsViewState extends State<CardsView> {
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.min,
-                      spacing: 4,
                       children: [
                         SvgPicture.asset(
                           'assets/svgs/mic_icon.svg',
@@ -259,6 +257,7 @@ class _CardsViewState extends State<CardsView> {
                           width: 48,
                           fit: BoxFit.cover,
                         ),
+                        SizedBox(width: 4,),
                         SvgPicture.asset(
                           'assets/svgs/forward_icon.svg',
                           height: 48,
