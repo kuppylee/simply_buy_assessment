@@ -12,8 +12,6 @@ import 'cards/cards_view.dart';
 import 'chat/chats_view.dart';
 
 class BottomNavBar extends StatefulWidget {
-  static const routeName = 'bottom_nav_bar';
-
   const BottomNavBar({Key? key}) : super(key: key);
 
   @override
@@ -36,11 +34,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   void _onItemTapped(int index) {
     if (_currentIndex == index && _controller.index == index) {
-      // Navigator.of(menuViewKey.currentContext!).pop();
-      // Pop to the first route if the same tab is tapped
       Navigator.of(context, rootNavigator: true).popUntil((route) => route.isFirst);
     } else {
-      // Navigator.of(menuViewKey.currentContext!).pop();
       setState(() {
         _currentIndex = index;
         _controller.index = index;
@@ -51,7 +46,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   void initState() {
     super.initState();
-    // ticketVm.getBookedAppointment(ticketVm.formattedDate, "20300521");
   }
 
   @override

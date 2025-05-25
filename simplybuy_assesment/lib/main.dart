@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:simplybuy_assesment/screens/bottom_nav_bar.dart';
+import 'package:simplybuy_assesment/utilities/app_colors.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      systemNavigationBarColor: AppColors.lightBlackColor, // Match your bottom nav bar color
+      systemNavigationBarIconBrightness: Brightness.light, // Adjust icon visibility
+    ),
+  );
   runApp(const MyApp());
 }
 

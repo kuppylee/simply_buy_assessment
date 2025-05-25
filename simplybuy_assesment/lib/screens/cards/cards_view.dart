@@ -30,7 +30,7 @@ class _CardsViewState extends State<CardsView> {
       body: Stack(
         children: [
           SizedBox(
-            height: MediaQuery.of(context).size.height / 2,
+            height: MediaQuery.of(context).size.height / 1.89,
             width: double.infinity,
             child: Image.asset(
               'assets/png/background video.png',
@@ -39,7 +39,7 @@ class _CardsViewState extends State<CardsView> {
           ),
           SizedBox(
             width: double.infinity,
-            height: double.infinity,
+            height: MediaQuery.of(context).size.height / 1.1,
             child: Image.asset('assets/png/fade.png', fit: BoxFit.cover),
           ),
           Column(
