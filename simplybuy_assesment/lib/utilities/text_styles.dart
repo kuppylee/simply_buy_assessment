@@ -34,3 +34,40 @@ const optionDescriptionTextStyles = TextStyle(
     color: AppColors.whiteColor2,
     fontSize: 12,
 );
+
+const nameTextStyles = TextStyle(
+    fontFamily: 'ProximaNova',
+    fontWeight: FontWeight.w700,
+    color: AppColors.whiteColor2,
+    fontSize: 11,
+);
+
+const timeOfTheDayTextStyles = TextStyle(
+    fontFamily: 'ProximaNova',
+    fontWeight: FontWeight.w700,
+    color: AppColors.whiteColor2,
+    fontSize: 20,
+);
+
+const myAnswerTextStyles = TextStyle(
+    fontFamily: 'ProximaNova',
+    fontWeight: FontWeight.w400,
+    color: AppColors.lightPurpleColor2,
+    fontSize: 12,
+
+);
+
+
+const answerOptionTextStyles = TextStyle(
+    fontFamily: 'ProximaNova',
+    fontWeight: FontWeight.w400,
+    color: AppColors.whiteColor3,
+    fontSize: 12,
+);
+
+const answersTextStyles = TextStyle(
+    fontFamily: 'ProximaNova',
+    fontWeight: FontWeight.w400,
+    color: AppColors.whiteColor3,
+    fontSize: 14,
+);
